@@ -31,23 +31,10 @@ body {
   gap: 1.5rem;
 }
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-}
 
-.btn {
-  background-color: #264653;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  transition: 0.3s;
-}
 
-.btn:hover {
-  background-color: #1d3557;
-}
 
-.hero {
+.main {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -56,22 +43,22 @@ body {
   flex-wrap: wrap;
 }
 
-.hero-text {
+.main-text {
   max-width: 600px;
 }
 
-.hero h1 {
+.main h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #264653;
 }
 
-.hero p {
+.main p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
 }
 
-.hero-img {
+.main-img {
   width: 400px;
   max-width: 100%;
   margin-top: 1rem;
@@ -109,30 +96,52 @@ body {
 }
 
 .card {
-  background-color: #f0f4f8;
+  background-color: #f4f4f4;
   padding: 1.5rem;
-  border-radius: 10px;
-  text-align: left;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.steps {
-  background-color: #fefefe;
-  padding: 2rem;
+  border-radius: 12px;
   text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
-.steps h2 {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  color: #264653;
+.card:hover {
+  transform: translateY(-5px);
 }
 
-.steps ol {
-  list-style-position: inside;
+.card i {
+  color: #2b7a78;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.hover-summary {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background-color: #d8f3dc;
+  padding: 1rem;
+  font-size: 0.9rem;
   text-align: left;
-  max-width: 600px;
-  margin: 0 auto;
+  transition: bottom 0.4s ease;
+  border-top: 1px solid #ccc;
+}
+
+.card:hover .hover-summary {
+  bottom: 0;
+}
+
+.hover-summary h4 {
+  color: #264653;
+  margin-bottom: 0.5rem;
+}
+
+.hover-summary ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+  color: #333;
 }
 
 .footer {
@@ -140,4 +149,100 @@ body {
   background-color: #2a9d8f;
   color: white;
   text-align: center;
+}
+.workflow {
+  background: linear-gradient(135deg, #e0f7fa, #f1fdfc);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.workflow h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #264653;
+}
+
+.workflow-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative;
+}
+
+.workflow-step {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.2rem 1rem;
+  width: 220px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+  position: relative;
+}
+
+.workflow-step .circle {
+  background-color: #2a9d8f;
+  color: white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.workflow-step h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #264653;
+}
+
+.workflow-step p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.workflow-line {
+  width: 30px;
+  height: 2px;
+  background-color: #b2dfdb;
+  align-self: center;
+}
+.btn {
+  background-color: #264653;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: 0.3s;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar a {
+  color: #ffffffcc; 
+  text-decoration: none;
+  position: relative;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #f4a261;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #f4a261; 
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
 }
