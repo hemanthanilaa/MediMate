@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <title>MediMate – Your Smart Medical Assistant</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
   <header class="navbar">
@@ -17,49 +18,117 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Track Prescriptions. Understand Your Treatment. Stay on Schedule.</h1>
-      <p>MediMate helps you manage prescriptions, view history, and get summaries of your treatment all in one secure place.</p>
+  <section class="main">
+    <div class="main-text">
+      <h1>Stay on Top of Your Health — the Simple Way</h1>
+      <p>MediMate helps you manage prescriptions, understand your treatment, and get helpful reminders — all in one place.</p>
       <a href="#" class="btn-primary">Get Started</a>
     </div>
-    <img src="img.png" alt="Medical Illustration" class="hero-img">
+    <img src="img.png" alt="MediMate" class="main-img"/>
   </section>
 
   <section id="features" class="features">
-    <h2>Key Features</h2>
+    <h2>What You Can Do</h2>
     <div class="features-grid">
+
       <div class="card">
-        <h3>Prescription Upload</h3>
-        <p>Upload images or PDFs. AI reads and extracts the text using OCR.</p>
+        <i class="fas fa-file-medical fa-2x"></i>
+        <h3>Upload Prescriptions</h3>
+        <p>Take a photo or upload a file — we’ll organize the info for you.</p>
+        <div class="hover-summary">
+          <h4>How It Works</h4>
+          <ul>
+            <li>Supports JPG, PNG, PDF formats</li>
+            <li>Medicine information on prescription is scanned and extracted</li>
+            <li>Prescriptions saved securely</li>
+          </ul>
+        </div>
       </div>
+
       <div class="card">
-        <h3>Prescription Summary</h3>
-        <p>Get a clean, easy-to-read summary of medications and instructions.</p>
+        <i class="fas fa-notes-medical fa-2x"></i>
+        <h3>Clear Summaries</h3>
+        <p>Get easy-to-read summaries of your medications and instructions.</p>
+        <div class="hover-summary">
+          <h4>What's Included</h4>
+          <ul>
+            <li>Summarized medicine details</li>
+            <li>Dosage and frequency breakdown</li>
+            <li>Warnings for side effects</li>
+          </ul>
+        </div>
       </div>
+
       <div class="card">
-        <h3>History Tracking</h3>
-        <p>View previous prescriptions by date. Track changes and progress.</p>
+        <i class="fas fa-history fa-2x"></i>
+        <h3>View Your History</h3>
+        <p>Check old prescriptions and track your treatment journey.</p>
+        <div class="hover-summary">
+          <h4>Track Your Journey</h4>
+          <ul>
+            <li>Search by date, doctor, or medicine</li>
+            <li>Instant access to older files</li>
+            <li>Downloadable reports</li>
+          </ul>
+        </div>
       </div>
+
       <div class="card">
-        <h3>Reminders</h3>
-        <p>Configure SMS or email reminders to never miss a dose.</p>
+        <i class="fas fa-bell fa-2x"></i>
+        <h3>Set Medication Reminders</h3>
+        <p>Never miss a dose with helpful text or email reminders.</p>
+        <div class="hover-summary">
+          <h4>Reminder Features</h4>
+          <ul>
+            <li>Custom timing for each medicine</li>
+            <li>Choose text, email, or both</li>
+            <li>Pause or stop anytime</li>
+          </ul>
+        </div>
       </div>
+
     </div>
   </section>
+  <section id="how-it-works" class="workflow">
+  <h2>How MediMate Works</h2>
+  <div class="workflow-steps">
+    <div class="workflow-step">
+      <div class="circle">1</div>
+      <div>
+        <h3>Sign Up & Create Profile</h3>
+        <p>Provide your health basics to personalize your dashboard.</p>
+      </div>
+    </div>
+    <div class="workflow-line"></div>
+    <div class="workflow-step">
+      <div class="circle">2</div>
+      <div>
+        <h3>Upload Your Prescription</h3>
+        <p>Take a photo or upload a file and we digitize the content for you.</p>
+      </div>
+    </div>
+    <div class="workflow-line"></div>
+    <div class="workflow-step">
+      <div class="circle">3</div>
+      <div>
+        <h3>Automatic Structuring</h3>
+        <p>We sort your medicines by time, condition, and dosage instructions.</p>
+      </div>
+    </div>
+    <div class="workflow-line"></div>
+    <div class="workflow-step">
+      <div class="circle">4</div>
+      <div>
+        <h3>Activate Smart Reminders</h3>
+        <p>Set how you would like to be reminded: SMS, email, or app notification.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <section id="how-it-works" class="steps">
-    <h2>How It Works</h2>
-    <ol>
-      <li>Sign up securely using your email.</li>
-      <li>Upload prescriptions using phone or laptop.</li>
-      <li>Let AI summarize and organize your prescriptions.</li>
-      <li>View medical history and get medication alerts.</li>
-    </ol>
-  </section>
 
   <footer id="contact" class="footer">
-    <p>&copy; 2025 MediMate | Built during MVP to AI-Powered Apps Internship</p>
+    <p>&copy; 2025 MediMate. All rights reserved.</p>
   </footer>
 </body>
 </html>
